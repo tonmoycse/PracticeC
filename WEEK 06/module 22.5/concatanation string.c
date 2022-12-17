@@ -10,9 +10,6 @@ char sc(int a)
         scanf("%s",&str2[i]);
         strcat(str1, str2[i]);
     }
-    
-
-
     return str1;
 }
 
