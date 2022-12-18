@@ -9,17 +9,16 @@ int main()
         scanf("%d %d", &low, &high);
         while (low <= high)
         {
-            
             flag = 0;
-
-            // ignore numbers less than 2
             if (low <= 1)
             {
+                if (low==1)
+                {
+                    printf("1 ");
+                }
                 ++low;
                 continue;
             }
-
-            // if low is a non-prime number, flag will be 1
             for (j = 2; j <= low / 2; ++j)
             {
 
@@ -29,12 +28,12 @@ int main()
                     break;
                 }
             }
-
             if (flag == 0)
             {
                 printf("%d ", low);
             }
             ++low;
         }
+        printf("\n");
     }
 }

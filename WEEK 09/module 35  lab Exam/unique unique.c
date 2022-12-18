@@ -6,11 +6,8 @@ int main()
     int n;
     scanf("%d",&n);
 
-    char s[n];
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%c",&s[i]);
-    }
+    char s[n+1];
+    scanf("%s",s);
     int largestElement = 26;
     int freq[largestElement + 1];
 
@@ -19,7 +16,7 @@ int main()
         freq[i] = 0;
     }
 
-    for (int i = 0; i < strlen(s); i++)
+    for (int i = 0; i < n; i++)
     {
         freq[(s[i] - 'a') + 1]++;
     }
